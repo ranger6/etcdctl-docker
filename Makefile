@@ -1,5 +1,5 @@
-# DOCKER_IMAGE_NAME := hub.docker.hpecorp.net:443/hyerle/etcdctl:3.2
-DOCKER_IMAGE_NAME := ranger6/etcdctl:3.2
+DOCKER_IMAGE_NAME := hub.docker.hpecorp.net:443/hyerle/etcdctl:3.2
+# DOCKER_IMAGE_NAME := ranger6/etcdctl:3.2
 
 build: Dockerfile
 	docker build --file Dockerfile --tag $(DOCKER_IMAGE_NAME) .
